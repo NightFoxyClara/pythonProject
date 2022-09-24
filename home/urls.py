@@ -1,0 +1,30 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('hello/', views.say_hello, name='hello'),
+    path('home/', views.go_home),
+    path('teacher1/', views.teacher1, name='teacher1'),
+    path('POST_crawl/', views.POST_crawl, name='POST_crawl'),
+    path('question_generation/', views.question_generation, name='question_generation'),
+    path('save_db/', views.save_db, name='save_db'),
+    path('select_db/', views.select_db, name='select_db'),
+    path('delete_db/', views.delete_db, name='delete_db'),
+    path('teacher_delete/', views.teacher_delete, name='teacher_delete'),
+    path('modify_db/', views.modify_db, name='modify_db'),
+    path('teacher_choice/', views.teacher_choice, name='teacher_choice'),
+    path('all_title/', views.all_title, name='all_title'),
+    path('modify_second/', views.modify_second, name='modify_second'),
+    path('delete_table/', views.delete_table, name='delete_table'),
+    path('', views.login, name='login'),
+    path('register/', views.register, name='register'),
+    path('s_create_account/', views.s_create_account, name='s_create_account'),
+    path('t_create_account/', views.t_create_account, name='t_create_account'),
+    path('login_/', views.login_, name='login_'),
+    path('view_account/', views.view_account, name='view_account'),
+    path('s_all_title/', views.s_all_title, name='s_all_title'),
+    path('s_write/', views.s_write, name='s_write'),
+    path('answer_compared/', views.answer_compared, name='answer_compared'),
+    path('see_score/', views.see_score, name='see_score'),
+    path('back_student_choice/', views.back_student_choice, name='back_student_choice'),
+]
